@@ -4,7 +4,7 @@ A simple Go application that executes system commands, for user and device enume
 
 ## Features
 
-- Executes Windows command-line commands
+- Executes Windows command-line commands (by defautlt, `whoami`, `hostname`, `systeminfo`, and `ipconfig`)
 - Sends command output to Discord using webhooks
 - Supports JSON-formatted message content
 - Error handling for both command execution and Discord communication
