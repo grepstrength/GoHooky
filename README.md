@@ -2,7 +2,7 @@
 
 # GoHooky
 
-A simple Go application that executes system commands, for user and device enumeration, and sends the output to a target Discord via webhooks.
+A simple Go application that executes system commands, for user and device enumeration, and sends the output to a target Discord server via webhooks.
 
 ## Features
 
