@@ -104,5 +104,4 @@ func main() {
 		}
 	}
 
-	fmt.Println("Information sent to Discord successfully.")
 }
